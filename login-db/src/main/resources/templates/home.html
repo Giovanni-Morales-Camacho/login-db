@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>¡Bienvenido a la página de inicio, <span th:text="${username}">Usuario</span>!</h1>
+    <h4>Menú de opciones disponibles para su id de usuario «<span th:text="${username}">Usuario</span>»</h4>
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Salir</button>
+    </form>
+</body>
+</html>
+ 
